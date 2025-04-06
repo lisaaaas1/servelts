@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-  <title>Java Servlet App</title>
+  <title>Список папок и файлов компьютера </title>
 </head>
 <body>
 <p> <%= new java.util.Date() %> </p>
