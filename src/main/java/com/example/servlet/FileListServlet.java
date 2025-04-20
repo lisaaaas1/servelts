@@ -21,12 +21,12 @@ public class FileListServlet extends HttpServlet {
                     .replace("\\", "/");
         }
 
-
         File directory = new File(path);
         if (!directory.exists() || !directory.isDirectory()) {
-            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Directory not found");
+            response.sendError(HttpServletResponse.SC_NOT_FOUND, "Directory not found or invalid directory path");
             return;
         }
+
 
         List<LocalFile> items = new ArrayList<>();
         for (File file : directory.listFiles()) {

@@ -3,7 +3,6 @@ package com.example.servlet.discover;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.io.File;
 
 public class LocalFile {
     private final String path;
